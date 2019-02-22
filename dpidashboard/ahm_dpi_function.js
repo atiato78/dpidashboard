@@ -5,7 +5,7 @@ $(function(){
 	
 	var functionName = 'GetSubscriberProfiles';
 	function Load_All_SubscriberProfilesData(){		
-		$.getJSON("http://localhost:8080/kubernetes/dpidashboard/getsubscriberprofiles_api.php?function="+functionName+"&jsonCallback=?", function(data1){
+		$.getJSON("http://dpidashboard-expo.7e14.starter-us-west-2.openshiftapps.com/dpidashboard/getsubscriberprofiles_api.php?function="+functionName+"&jsonCallback=?", function(data1){
 			Load_PoliciesData(data1, 'GetPolicies')
 		});
 	}
