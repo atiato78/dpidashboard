@@ -52,7 +52,7 @@
 		removeElement("ahm_dpi_table");
 		if(text!=="Choose subscriber"){
 			var functionName = 'GetSubscriberProfilePerImei';	
-			$.getJSON("http://localhost:8080/kubernetes/dpidashboard/getsubscriberprofiles_api.php?function="+functionName+"&imei="+imei+"&jsonCallback=?", function(data){
+			$.getJSON("http://dpidashboard-expo.7e14.starter-us-west-2.openshiftapps.com/dpidashboard/getsubscriberprofiles_api.php?function="+functionName+"&imei="+imei+"&jsonCallback=?", function(data){
 				if(data==="error"){
 					alert("error");
 				}else{
@@ -67,7 +67,7 @@
 	}
 	
 	function Load_PoliciesData2(data1, thisfunctionName){
-		$.getJSON("http://localhost:8080/kubernetes/dpidashboard/getpolicies_api.php?function="+thisfunctionName+"&jsonCallback=?", function(data2){
+		$.getJSON("http://dpidashboard-expo.7e14.starter-us-west-2.openshiftapps.com/dpidashboard/getpolicies_api.php?function="+thisfunctionName+"&jsonCallback=?", function(data2){
 			
 			if(data2==="error"){
 				alert("error");
@@ -140,7 +140,7 @@
 		if(policyid!==""){
 			if(suscriberid !="--"){
 				var functionName = 'UpdateSubscriberPolicy';	
-                $.getJSON("http://localhost:8080/kubernetes/dpidashboard/updatesubscriberpolicy_api.php?function="+functionName+"&msisdn="+msisdn+"&policyid="+policyid+"&suscriberid="+suscriberid+"&jsonCallback=?", function(data){
+                $.getJSON("http://dpidashboard-expo.7e14.starter-us-west-2.openshiftapps.com/dpidashboard/updatesubscriberpolicy_api.php?function="+functionName+"&msisdn="+msisdn+"&policyid="+policyid+"&suscriberid="+suscriberid+"&jsonCallback=?", function(data){
 						if(data==="error"){
 							alert("error");
 						}else{
@@ -150,7 +150,7 @@
 				});
 			}else{
 				var functionName = 'AddSubscriberPolicy';	
-					$.getJSON("http://localhost:8080/kubernetes/dpidashboard/addsubscriberpolicy_api.php?function="+functionName+"&imei="+imei+"&policyid="+policyid+"&jsonCallback=?", function(data){
+					$.getJSON("http://dpidashboard-expo.7e14.starter-us-west-2.openshiftapps.com/dpidashboard/addsubscriberpolicy_api.php?function="+functionName+"&imei="+imei+"&policyid="+policyid+"&jsonCallback=?", function(data){
 						if(data==="error"){
 							alert("error");
 						}else{
