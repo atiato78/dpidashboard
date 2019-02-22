@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Responstable 2.0: a responsive table solution</title>
+  <title>DPI Provisioning Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
